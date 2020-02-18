@@ -1,9 +1,27 @@
-.logo{
-  color: white;
-  width: 150px;
-  height: 150px
+.logoWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoKum{
+
+   height: 150px;
+
+
+ }
+.logoWSPol{
+  height: 80px;
+}
+.logoSUWSPol{
+  height: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+ border-radius: 100px;
 }
 .mainTitle{
+  margin-top: 20px;
   font-size: 2em;
 }
 

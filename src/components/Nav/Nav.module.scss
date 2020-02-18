@@ -17,11 +17,18 @@
   font-size: 0.9em;
 
   li{
+
     width: 33.3%;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+
+    &:nth-child(2){
+      border-right: dotted white 3px;
+      border-left: dotted white 3px;
+    }
 
     div{
       margin-left: 5px;
