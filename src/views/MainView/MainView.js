@@ -54,14 +54,16 @@ expandLast = () => {
 
             <div className={styles.wrapper}>
 
+                <p className={styles.eventLabel}>Następne wydarzenie</p>
+                <Event expand = {this.state.isNextExpanded} next onClick = {this.expandNext} index={0}>  Następne wydarzenie </Event>
 
+                <p className={styles.eventLabel}> Teraz</p>
+                <Event expand = {this.state.isNowExpanded} now onClick = {this.expandNow} index={1}> Wydarzenie teraz </Event>
 
                 <p className={styles.eventLabel}>Ostatnie wydarzenie</p>
-                <Event expand = {this.state.isLastExpanded} last onClick = {this.expandLast}> </Event>
-                <p className={styles.eventLabel}> Teraz</p>
-                <Event expand = {this.state.isNowExpanded} now onClick = {this.expandNow}> Wydarzenie teraz </Event>
-                <p className={styles.eventLabel}>Następne wydarzenie</p>
-                <Event expand = {this.state.isNextExpanded} next onClick = {this.expandNext}>  Następne wydarzenie </Event>
+                <Event expand = {this.state.isLastExpanded} last onClick = {this.expandLast} index={2}> </Event>
+
+
 
 
             </div>

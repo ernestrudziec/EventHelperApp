@@ -3,7 +3,7 @@ import styles from './Event.module.scss';
 import kumPlan from "../../data/eventPlan";
 import './Event.module.scss';
 
-const Event = ({children, expand, now, last, next, onClick, ...props}) =>{
+const Event = ({children, expand, now, last, next, onClick, index, ...props}) =>{
 
     let eventClass;
 
@@ -25,10 +25,10 @@ const Event = ({children, expand, now, last, next, onClick, ...props}) =>{
 
            <div className={styles.mainInfo}>
            <p className={styles.eventTime}>
-               {kumPlan[i].startHour}:{kumPlan[i].startMinute == 0 ? "00" : kumPlan[i].startMinute} - {kumPlan[i].endHour}:{ (kumPlan[i].endMinute == 0) ? "00" : kumPlan[i].endMinute }
+               {kumPlan[index].startHour}:{kumPlan[index].startMinute == 0 ? "00" : kumPlan[index].startMinute} / {kumPlan[index].endHour}:{ (kumPlan[index].endMinute == 0) ? "00" : kumPlan[index].endMinute }
            </p>
            <p className={styles.eventName}>
-               {kumPlan[i].event}
+               {kumPlan[index].event}
            </p>
 
 
@@ -36,10 +36,10 @@ const Event = ({children, expand, now, last, next, onClick, ...props}) =>{
            <i className="fas fa-caret-square-down"></i>
            </div>
 
-           <p className={styles.description}> {expand ? kumPlan[i].description : null} </p>
-           <p className={styles.author}> {expand ? "Prowadzący: " + kumPlan[i].author : null}</p>
-           <p className={styles.place}> {expand ? "Miejsce: " + kumPlan[i].place : null}</p>
-           <p className={styles.dressCode}> {expand ? "Dress code: " + kumPlan[i].dressCode : null}</p>
+           <p className={styles.description}> {expand ? kumPlan[index].description : null} </p>
+           <p className={styles.author}> {expand && kumPlan[index].author != "" ? "Prowadzący: " + kumPlan[index].author : null}</p>
+           <p className={styles.place}> {expand ? "Miejsce: " + kumPlan[index].place : null}</p>
+           <p className={styles.dressCode}> {expand ? "Dress code: " + kumPlan[index].dressCode : null}</p>
        </div>
 
     )

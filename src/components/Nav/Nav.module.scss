@@ -46,10 +46,17 @@
   text-decoration: none;
   color: white;
   cursor: pointer;
+  transition: 0.3s;
 
-  &active{
-    
-  }
+
+
+}
+
+.navItemLinkActive{
+  text-decoration: underline !important;
+  font-weight: 600;
+  transition: 0.3s;
+  transform: scale(1.05);
 }
 
 

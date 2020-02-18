@@ -16,6 +16,7 @@ $kumGraySecond: #969CB3;
 
 .description{
   padding: 20px;
+  font-size: 1.5em;
 }
 
 
@@ -24,7 +25,7 @@ $kumGraySecond: #969CB3;
   padding-left: 20px;
   margin-bottom: 20px;
   margin-top: 5px;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 
@@ -34,10 +35,10 @@ $kumGraySecond: #969CB3;
   justify-content: flex-start;
   align-items: center;
   color: white;
-  border-radius: 10px;
-  margin: 10px;
-  width: auto;
-  height: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100vw;
+  height: 300px;
   cursor: pointer;
   -webkit-box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.2);
@@ -54,7 +55,7 @@ $kumGraySecond: #969CB3;
 
 .last{
 
-  height: 50px;
+  height: 70px;
   color: $kumViolet;
   background-color: $kumLightGray;
   font-size: 0.8em;
@@ -69,11 +70,16 @@ $kumGraySecond: #969CB3;
 
 .eventTime{
   padding: 30px 20px;
-  transform: scale(0.89);
+  width: 150px;
+  font-size: 1em;
+  font-weight: 100;
+
+
 
 }
 
 .eventName{
+  width: 200px;
  font-weight: 600;
   font-size: 1em;
   margin-right: 30px;
@@ -103,30 +109,34 @@ i:last-of-type{
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-top: 30px;
+
   color: white;
   border-radius: 10px;
   margin: 10px;
   width: auto;
-  height: auto;
+  min-height: 300px;
   -webkit-box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.2);
   box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.2);
   position: relative;
   cursor: pointer;
+  border-radius: 0px;
 
 }
 
 
 
 .expandedNowEvent{
-
+  width: 100vw;
+  border-radius: 0px;
   background-color: $kumViolet;
 }
 
 
 .expandedLastEvent{
+  border-radius: 0px;
 
+  width: 100vw;
   color: $kumViolet;
   background-color: $kumLightGray;
   font-size: 0.8em;
@@ -135,7 +145,8 @@ i:last-of-type{
 
 
 .expandedNextEvent{
-
+  border-radius: 0px;
+  width: 100vw;
   font-size: 0.8em;
   background-color: $kumGraySecond;
 
