@@ -1,0 +1,66 @@
+$kumViolet: #220644;
+$kumLightGray: #F9F9F9;
+$kumGray: #cecece;
+$kumGraySecond: #969CB3;
+
+.now, .last, .next{
+  display: flex;
+  justify-content: flex-start;
+
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  margin: 10px;
+  width: 400px;
+  height: 100px;
+  -webkit-box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+
+.now{
+
+  background-color: $kumViolet;
+}
+
+.last{
+  width: 300px;
+  height: 50px;
+  color: $kumViolet;
+  background-color: $kumLightGray;
+  font-size: 0.8em;
+}
+
+.next{
+  width: 300px;
+  height: 50px;
+  font-size: 0.8em;
+  background-color: $kumGraySecond;
+}
+
+.eventTime{
+  margin: 10px;
+  margin-left: 30px;
+  transform: scale(0.89);
+
+}
+
+.eventName{
+ font-weight: 600;
+  font-size: 1em;
+}
+
+i{
+  cursor: pointer !important;
+  margin-left: 20px;
+  font-size: 20px;
+  position: absolute;
+  right: 30px;
+}
+
+
+i:last-of-type{
+  font-size: 2em;
+}

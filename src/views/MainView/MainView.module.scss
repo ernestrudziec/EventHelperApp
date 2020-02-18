@@ -1,0 +1,47 @@
+
+$kumViolet: #220644;
+$kumLightGray: #F9F9F9;
+$kumGray: #cecece;
+$kumGraySecond: #969CB3;
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper{
+  height: 100vh;
+  width: 100vw;
+  background: $kumGray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo{
+  color: white;
+  width: 300px;
+  height: 300px
+}
+
+.eventLabel{
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+
+.logoKum{
+  width: 150px;
+  margin-bottom: 30px
+}
+
+.mainTitle{
+  font-size: 2em;
+}
+
+.secondaryTitle{
+  font-size: 1em;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
