@@ -3,7 +3,9 @@ import React from 'react';
 import MainView from "../MainView/MainView";
 import AboutMeView from "../AboutMeView/AboutMeView";
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
-import logoKum from "../../assets/logo/logo-kum.png";
+import styles from './Root.module.scss';
+import Header from "../../components/Header/Header";
+import Nav from "../../components/Nav/Nav";
 
 
 class Root extends React.Component {
@@ -16,6 +18,9 @@ class Root extends React.Component {
 
             <BrowserRouter>
 
+                <div className={styles.wrapper}>
+                <Header/>
+                <Nav/>
 
                 <Switch>
 
@@ -23,8 +28,11 @@ class Root extends React.Component {
                     <Route path="/about" component={AboutMeView}/>
 
                 </Switch>
+                </div>
+
 
             </BrowserRouter>
+
         );
 
     }

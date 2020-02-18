@@ -1,0 +1,15 @@
+$kumViolet: #220644;
+$kumLightGray: #F9F9F9;
+$kumGray: #cecece;
+$kumGraySecond: #969CB3;
+
+
+.wrapper{
+  min-height: 100vh;
+  width: 100vw;
+  background: $kumGray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

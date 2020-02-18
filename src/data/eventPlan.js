@@ -10,6 +10,7 @@ const kumPlan = [
         event: 'Obsługa paralizatora',
         description: 'Uczestnicy poznają tajniki obsługi paralalizatora dzięki wykwalfikowanym pracownikom policji',
         dressCode: 'Strój sportowy',
+        author: 'podinsp. Ryszard Kukliński',
 
     },
 
@@ -23,6 +24,7 @@ const kumPlan = [
         event: 'Obiad',
         description: 'Posiłek kotlet schabowy, zieminiaki, surówka + zupa rosół',
         dressCode: 'Dowolny',
+        author: 'podinsp. Ryszard Kukliński',
 
     },
 
@@ -35,6 +37,7 @@ const kumPlan = [
         event: 'Taktyki i techniki interwencji',
         description: 'Uczestnicy poznają tajniki obsługi paralalizatora dzięki wykwalfikowanym pracownikom policji',
         dressCode: 'Strój sportowy na matę',
+        author: 'podinsp. Ryszard Kukliński',
 
     }
 

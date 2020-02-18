@@ -3,16 +3,42 @@ $kumLightGray: #F9F9F9;
 $kumGray: #cecece;
 $kumGraySecond: #969CB3;
 
+
+
+.mainInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  
+
+}
+
+.description{
+  padding: 20px;
+}
+
+
+.author, .place, .dressCode{
+
+  padding-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-size: 1.1em;
+}
+
+
 .now, .last, .next{
+  transition: 0.3s;
   display: flex;
   justify-content: flex-start;
-
   align-items: center;
   color: white;
   border-radius: 10px;
   margin: 10px;
-  width: 400px;
-  height: 100px;
+  width: auto;
+  height: 200px;
+  cursor: pointer;
   -webkit-box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.2);
   box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.2);
@@ -23,10 +49,11 @@ $kumGraySecond: #969CB3;
 .now{
 
   background-color: $kumViolet;
+  height: 100px;
 }
 
 .last{
-  width: 300px;
+
   height: 50px;
   color: $kumViolet;
   background-color: $kumLightGray;
@@ -34,15 +61,14 @@ $kumGraySecond: #969CB3;
 }
 
 .next{
-  width: 300px;
+
   height: 50px;
   font-size: 0.8em;
   background-color: $kumGraySecond;
 }
 
 .eventTime{
-  margin: 10px;
-  margin-left: 30px;
+  padding: 30px 20px;
   transform: scale(0.89);
 
 }
@@ -50,12 +76,17 @@ $kumGraySecond: #969CB3;
 .eventName{
  font-weight: 600;
   font-size: 1em;
+  margin-right: 30px;
+
+
+
 }
 
 i{
   cursor: pointer !important;
-  margin-left: 20px;
+
   font-size: 20px;
+
   position: absolute;
   right: 30px;
 }
@@ -63,4 +94,49 @@ i{
 
 i:last-of-type{
   font-size: 2em;
+}
+
+
+.expandedNowEvent, .expandedLastEvent, .expandedNextEvent{
+  transition: 0.3s;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 30px;
+  color: white;
+  border-radius: 10px;
+  margin: 10px;
+  width: auto;
+  height: auto;
+  -webkit-box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.2);
+  position: relative;
+  cursor: pointer;
+
+}
+
+
+
+.expandedNowEvent{
+
+  background-color: $kumViolet;
+}
+
+
+.expandedLastEvent{
+
+  color: $kumViolet;
+  background-color: $kumLightGray;
+  font-size: 0.8em;
+
+}
+
+
+.expandedNextEvent{
+
+  font-size: 0.8em;
+  background-color: $kumGraySecond;
+
 }

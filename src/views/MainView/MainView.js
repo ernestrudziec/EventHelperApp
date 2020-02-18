@@ -7,27 +7,71 @@ import kumPlan from "../../data/eventPlan";
 import {BrowserRouter, Switch} from "react-router-dom";
 import logoKum from '../../assets/logo/logo-kum.png';
 
-const MainView = () => (
+class MainView extends React.Component {
+    constructor(props) {
+        super(props);
 
+    }
 
-<div className={styles.wrapper}>
-    <img src={logoKum} className={styles.logoKum} alt="Komisja Uczelni Mundurowych"/>
-    <h1 className={styles.mainTitle}>XXXVII Zjazd kum</h1>
-    <h2 className={styles.secondaryTitle}>Wyższa Szkoła Policji w Szczytnie</h2>
-
-
-    <p className={styles.eventLabel}>Ostatnie wydarzenie</p>
-    <Event last>  </Event>
-    <p className={styles.eventLabel}> Teraz</p>
-    <Event now> Wydarzenie teraz </Event>
-    <p className={styles.eventLabel}>Następne wydarzenie</p>
-    <Event next>  Następne wydarzenie </Event>
-
-
-</div>
+    state = {
+    isLastExpanded: false,
+        isNowExpanded: false,
+        isNextExpanded: false,
+    }
 
 
 
-);
+expandLast = () => {
+
+            this.setState({
+                isLastExpanded: !this.state.isLastExpanded,
+            })
+
+}
+
+    expandNow = () => {
+
+        this.setState({
+            isNowExpanded: !this.state.isNowExpanded,
+        })
+
+    }
+
+    expandNext = () => {
+
+        this.setState({
+            isNextExpanded: !this.state.isNextExpanded,
+        })
+
+    }
+
+
+
+    render(){
+
+
+        return(
+
+            <div className={styles.wrapper}>
+
+
+
+                <p className={styles.eventLabel}>Ostatnie wydarzenie</p>
+                <Event expand = {this.state.isLastExpanded} last onClick = {this.expandLast}> </Event>
+                <p className={styles.eventLabel}> Teraz</p>
+                <Event expand = {this.state.isNowExpanded} now onClick = {this.expandNow}> Wydarzenie teraz </Event>
+                <p className={styles.eventLabel}>Następne wydarzenie</p>
+                <Event expand = {this.state.isNextExpanded} next onClick = {this.expandNext}>  Następne wydarzenie </Event>
+
+
+            </div>
+        );
+    }
+
+
+
+
+
+}
 
 export default MainView;
