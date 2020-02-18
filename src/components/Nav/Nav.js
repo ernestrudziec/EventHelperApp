@@ -1,5 +1,6 @@
 import React from "react";
 import styles from './Nav.module.scss';
+import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
 
@@ -9,14 +10,22 @@ const Nav = () => {
 
 
             <ul className={styles.list}>
-                <li>Kontakt
+                <li><NavLink exact activeClassName={styles.navItemLinkActive}
+                             className={styles.navItemLink} to = "/kontakt">
+                    Kontakt
                     <div className="fas fa-phone-square-alt"></div>
+                </NavLink>
                 </li>
-                <li>Plan zjazdu
+                <li><NavLink exact activeClassName={styles.navItemLinkActive}
+                             className={styles.navItemLink} to = "/planzjazdu">
+                    Plan zjazdu
                     <div className="fas fa-calendar-check"></div>
+                </NavLink>
                 </li>
-                <li>Mapa WSPol
+                <li><NavLink exact activeClassName={styles.navItemLinkActive}
+                             className={styles.navItemLink} to = "/mapawspol">Mapa WSPol
                     <div className="fas fa-map-pin"></div>
+                </NavLink>
                 </li>
             </ul>
 
