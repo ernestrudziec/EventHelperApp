@@ -18,7 +18,7 @@ const Header = () => {
                 <img src= {logoWSPol} className={styles.logoWSPol} alt="Komisja Uczelni Mundurowych"/>
             </div>
 
-                <h1 className={styles.mainTitle}> XXXVII Zjazd Komisji Uczelni Mundurowych </h1>
+                <h1 className={styles.mainTitle}> XXXVII Zjazd KUM </h1>
 
 
 

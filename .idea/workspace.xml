@@ -3,20 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3a974f02-ef7d-4acf-a312-a31582576e50" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Clock/Clock.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Clock/Clock.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Event/Event.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Event/Event.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Event/Event.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Event/Event.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/ContactView/ContactView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ContactView/ContactView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/ContactView/ContactView.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ContactView/ContactView.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/FullPlanView/FullPlanView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/FullPlanView/FullPlanView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/MainView/MainView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/MainView/MainView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/MainView/MainView.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/MainView/MainView.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/MapView/MapView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/MapView/MapView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/MapView/MapView.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/MapView/MapView.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Root/Root.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Root/Root.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Root/Root.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Root/Root.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +94,7 @@
       <updated>1581423752572</updated>
       <workItem from="1581423755385" duration="238000" />
       <workItem from="1581924982044" duration="28633000" />
-      <workItem from="1582055437912" duration="5385000" />
+      <workItem from="1582055437912" duration="5549000" />
     </task>
     <servers />
   </component>
