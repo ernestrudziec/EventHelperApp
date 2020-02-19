@@ -17,7 +17,10 @@ const Event = ({children, expand, now, last, next, onClick, index, ...props}) =>
     else if(next) eventClass = styles.next;
 
 
+
+
     let i = 2;
+    let isExpand = expand;
 
     return (
 
@@ -33,7 +36,7 @@ const Event = ({children, expand, now, last, next, onClick, index, ...props}) =>
 
 
 
-           <i className="fas fa-caret-square-down"></i>
+           <i className={'fas fa-caret-square-down' + (expand ? ' rotated' : '')}></i>
            </div>
 
            <p className={styles.description}> {expand ? kumPlan[index].description : null} </p>

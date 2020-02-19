@@ -19,9 +19,10 @@ class Root extends React.Component {
 
             <BrowserRouter>
 
+                <Nav/>
                 <div className={styles.wrapper}>
                 <Header/>
-                <Nav/>
+
 
                 <Switch>
 
@@ -33,7 +34,7 @@ class Root extends React.Component {
                 </Switch>
                 </div>
 
-
+            <p className={styles.copyrights}> Copyrights &copy; Ernest Rudziec 2020 </p>
             </BrowserRouter>
 
         );

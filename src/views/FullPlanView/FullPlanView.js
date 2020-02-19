@@ -4,13 +4,14 @@ import styles from './FullPlanView.module.scss';
 import kumPlan from "../../data/eventPlan";
 import Event from "../../components/Event/Event";
 
-const FullPlanView = () =>{
+const FullPlanView = () => {
 
 
     return(
+
         <>
-            <Link to ="/" className={styles.linkHome}>Ekran startowy</Link>
-        <div className={styles.wrapper}>
+
+            <div className={styles.wrapper}>
 
 
 
@@ -19,11 +20,12 @@ const FullPlanView = () =>{
 
                 return (
                     <>
-                        <Event last index={i}></Event>
+                        <Event next index={i}></Event>
                     </>
                 );
 
             }
+
             )}
 
 

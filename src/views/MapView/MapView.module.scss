@@ -1,34 +1,35 @@
-.linkHome{
-  text-decoration: none !important;
-  color: white;
-  background-color: #220644;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-}
+
 
 .linkToMap{
 
   background-color: #220644;
   color: white;
-  width: 300px;
-  height: 100px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
+  width: 85vw;
   align-items: center;
   text-align: center;
   text-decoration: none;
   font-weight: 300;
   cursor: pointer;
   padding: 10px;
-  font-size: 1.5em;
+  font-size: 1em;
+  margin-bottom: 60px;
+  -webkit-box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.2);
 
 }
 
 .image{
-  width: 60vw;
+  width: 85vw;
+  margin-top: 20px;
   margin-bottom: 20px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.2);
+  padding: 20px 10px;
 }

@@ -8,9 +8,9 @@ const MapView = () => {
 
     return(
         <>
-            <img className={styles.image} src="http://www.e-wspol.edu.pl/ws/indexdata/floorplan/zwymiarowana_mapa_plan.png"/>
-            <a className={styles.linkToMap} href="http://www.e-wspol.edu.pl/ws/">Kliknij tu aby przejść do wirtualnego widoku 3D uczelni.</a>
-        <Link to ="/" className={styles.linkHome}>Ekran startowy</Link>
+             <img className={styles.image} src="http://www.e-wspol.edu.pl/ws/indexdata/floorplan/zwymiarowana_mapa_plan.png"/>
+             <a className={styles.linkToMap} href="http://www.e-wspol.edu.pl/ws/">Kliknij tu aby przejść do wirtualnego widoku 3D uczelni.</a>
+
 
             </>
     );

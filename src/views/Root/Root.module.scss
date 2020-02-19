@@ -43,3 +43,14 @@ $kumGraySecond: #969CB3;
   z-index: -1;
 
 }
+
+.copyrights{
+  position: fixed;
+  color: black;
+  z-index: 100;
+  bottom: 90px;
+  font-size: 0.6em;
+  opacity: 0.1;
+  left: 50%;
+  transform: translateX(-50%);
+}
