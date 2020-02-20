@@ -26,33 +26,33 @@ class MainView extends React.Component {
  showWhatIsNow = () => {
 
      let indexOfEvent = 1;
-     let date = new Date();
+     let currentTime = new Date();
 
-     console.log(date.getDate() + " " + date.getHours())
+     const minute = currentTime.getMinutes();
+     const hour = currentTime.getHours();
+
+     let eventTime = new Date();
+
 
      kumPlan.map((object, i) => {
 
-        console.log(kumPlan[i].startHour + " / " + kumPlan[i].startMinute);
-         console.log(date.getHours() + " / " + date.getMinutes());
+         console.log("time: " + hour + ":" + (minute < 10 ? "0" + minute : minute));
+
+         eventTime.setMinutes(kumPlan[i].startMinute);
+         eventTime.setHours(kumPlan[i].startHour);
+
+         console.log(i + " - (" + eventTime.getHours() + ":" + (eventTime.getMinutes() === 0 ? eventTime.getMinutes() + "0" : eventTime.getMinutes() ) + ")")
+
+         if (eventTime <= currentTime)
+         { indexOfEvent = i }})
 
 
-             if(kumPlan[i].startHour >= date.getHours() && kumPlan[i].endHour < date.getHours() ){
-                 indexOfEvent = i;
+     console.log(" ");
+     console.log(" ");
+    console.log("eventNow: " + indexOfEvent);
+     console.log("eventNext: " + (indexOfEvent+1));
+     console.log("eventLast: " + (indexOfEvent-1));
 
-             }
-
-
-
-
-             });
-
-
-
-
-
-
-
-console.log(indexOfEvent);
         return indexOfEvent;
 
 }
@@ -85,19 +85,22 @@ expandLast = () => {
 
     render(){
 
+    let currentEvent = this.showWhatIsNow();
+    console.log(currentEvent);
+
 
         return(
 
             <div className={styles.wrapper}>
 
                 <p className={styles.eventLabel}>Następne</p>
-                <Event expand = {this.state.isNextExpanded} next onClick = {this.expandNext} index={this.showWhatIsNow()+1}>  Następne wydarzenie </Event>
+                <Event expand = {this.state.isNextExpanded} next onClick = {this.expandNext} index={currentEvent < kumPlan.length-1 ? (currentEvent+1) : currentEvent }>  Następne wydarzenie </Event>
 
                 <p className={styles.eventLabel}>Teraz</p>
-                <Event expand = {this.state.isNowExpanded} now onClick = {this.expandNow} index={this.showWhatIsNow()}> Wydarzenie teraz </Event>
+                <Event expand = {this.state.isNowExpanded} now onClick = {this.expandNow} index={ currentEvent }> Wydarzenie teraz </Event>
 
                 <p className={styles.eventLabel}>Ostatnie</p>
-                <Event expand = {this.state.isLastExpanded} last onClick = {this.expandLast} index={this.showWhatIsNow()-1}> </Event>
+                <Event expand = {this.state.isLastExpanded} last onClick = {this.expandLast} index={ currentEvent !== 0 ? (currentEvent-1) : currentEvent }> </Event>
 
 
 

@@ -19,8 +19,7 @@ const Event = ({children, expand, now, last, next, onClick, index, ...props}) =>
 
 
 
-    let i = 2;
-    let isExpand = expand;
+
 
     return (
 
@@ -28,7 +27,7 @@ const Event = ({children, expand, now, last, next, onClick, index, ...props}) =>
 
            <div className={styles.mainInfo}>
            <p className={styles.eventTime}>
-               {kumPlan[index].startHour}:{kumPlan[index].startMinute == 0 ? "00" : kumPlan[index].startMinute} / {kumPlan[index].endHour}:{ (kumPlan[index].endMinute == 0) ? "00" : kumPlan[index].endMinute }
+               {kumPlan[index].startHour}:{kumPlan[index].startMinute === 0 ? "00" : kumPlan[index].startMinute}-{kumPlan[index].endHour}:{ (kumPlan[index].endMinute === 0) ? "00" : kumPlan[index].endMinute }
            </p>
            <p className={styles.eventName}>
                {kumPlan[index].event}
