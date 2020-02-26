@@ -27,14 +27,14 @@ class MainView extends React.Component {
      let indexOfEvent = 1;
      let currentTime = new Date();
 
-     const day = 26;
-     const hour = 14;
-     const minute = 30;
+     const day = currentTime.getDate();
+     const hour = currentTime.getHours();
+     const minute = currentTime.getMinutes();
 
 
-     currentTime.setDate(day);
-     currentTime.setHours(hour);
-     currentTime.setMinutes(minute);
+     // currentTime.setDate(day);
+     // currentTime.setHours(hour);
+     // currentTime.setMinutes(minute);
 
      let eventTime = new Date();
 
