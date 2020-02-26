@@ -18,18 +18,17 @@ class MainView extends React.Component {
         isNowExpanded: false,
         isNextExpanded: false,
         nowIndex: 1,
-
     }
 
 
 
- showWhatIsNow = () => {
+    showWhatIsNow = () => {
 
      let indexOfEvent = 1;
      let currentTime = new Date();
 
-     const minute = currentTime.getMinutes();
-     const hour = currentTime.getHours();
+     const minute = 15;
+     const hour = 15;
 
      let eventTime = new Date();
 
@@ -49,7 +48,7 @@ class MainView extends React.Component {
 
      console.log(" ");
      console.log(" ");
-    console.log("eventNow: " + indexOfEvent);
+     console.log("eventNow: " + indexOfEvent);
      console.log("eventNext: " + (indexOfEvent+1));
      console.log("eventLast: " + (indexOfEvent-1));
 
@@ -57,7 +56,7 @@ class MainView extends React.Component {
 
 }
 
-expandLast = () => {
+    expandLast = () => {
 
             this.setState({
                 isLastExpanded: !this.state.isLastExpanded,
