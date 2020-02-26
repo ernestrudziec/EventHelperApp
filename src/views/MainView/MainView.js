@@ -27,8 +27,14 @@ class MainView extends React.Component {
      let indexOfEvent = 1;
      let currentTime = new Date();
 
-     const minute = 15;
-     const hour = 15;
+     const day = 26;
+     const hour = 14;
+     const minute = 30;
+
+
+     currentTime.setDate(day);
+     currentTime.setHours(hour);
+     currentTime.setMinutes(minute);
 
      let eventTime = new Date();
 
@@ -39,8 +45,9 @@ class MainView extends React.Component {
 
          eventTime.setMinutes(kumPlan[i].startMinute);
          eventTime.setHours(kumPlan[i].startHour);
+         eventTime.setDate(kumPlan[i].startDay);
 
-         console.log(i + " - (" + eventTime.getHours() + ":" + (eventTime.getMinutes() === 0 ? eventTime.getMinutes() + "0" : eventTime.getMinutes() ) + ")")
+         console.log(i + " - (" + eventTime.getDate() + " dzień / " + eventTime.getHours() + ":" + (eventTime.getMinutes() === 0 ? eventTime.getMinutes() + "0" : eventTime.getMinutes() ) + ")")
 
          if (eventTime <= currentTime)
          { indexOfEvent = i }})

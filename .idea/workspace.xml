@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a974f02-ef7d-4acf-a312-a31582576e50" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/PlanEvent/PlanEvent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PlanEvent/PlanEvent.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Clock/Clock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Clock/Clock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Clock/Clock.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Clock/Clock.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Event/Event.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Event/Event.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/Nav.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Nav.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/eventPlan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/eventPlan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/ContactView/ContactView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ContactView/ContactView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/FullPlanView/FullPlanView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/FullPlanView/FullPlanView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/FullPlanView/FullPlanView.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/FullPlanView/FullPlanView.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/MainView/MainView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/MainView/MainView.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +110,7 @@
       <workItem from="1582278457159" duration="522000" />
       <workItem from="1582397219796" duration="1309000" />
       <workItem from="1582480652094" duration="329000" />
-      <workItem from="1582713042363" duration="2720000" />
+      <workItem from="1582713042363" duration="7320000" />
     </task>
     <servers />
   </component>
@@ -208,10 +216,10 @@
       <screen x="0" y="23" width="1680" height="958" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.23.1680.958@0.23.1680.958" timestamp="1582715363375" />
-    <state x="699" y="232" width="670" height="675" key="search.everywhere.popup" timestamp="1582116452057">
+    <state x="699" y="232" width="670" height="675" key="search.everywhere.popup" timestamp="1582723250111">
       <screen x="0" y="23" width="1680" height="958" />
     </state>
-    <state x="699" y="232" width="670" height="675" key="search.everywhere.popup/0.23.1680.958@0.23.1680.958" timestamp="1582116452057" />
+    <state x="699" y="232" width="670" height="675" key="search.everywhere.popup/0.23.1680.958@0.23.1680.958" timestamp="1582723250111" />
     <state x="699" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.960@0.23.1680.960" timestamp="1581927131775" />
     <state x="699" y="233" width="670" height="677" key="search.everywhere.popup/0.23.1680.961@0.23.1680.961" timestamp="1582010487675" />
   </component>

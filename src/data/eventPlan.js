@@ -164,7 +164,7 @@ const kumPlan = [
         startMinute: 1,
         endHour: 7,
         endMinute: 30,
-        place: 'Stołówka WSPol - kampius WSPol',
+        place: 'Stołówka WSPol - kampus WSPol',
         event: 'Śniadanie',
         description: 'Smacznego! :)',
         dressCode: 'Dowolny',
@@ -336,7 +336,7 @@ const kumPlan = [
         place: 'OW Wałpusz, sala dydaktyczna',
         event: 'Wykwaterowanie',
         description: 'Mamy nadzieję, że się podobało! :)',
-        dressCode: 'Stró dowolny',
+        dressCode: 'Strój dowolny',
         author: '',
 
     },

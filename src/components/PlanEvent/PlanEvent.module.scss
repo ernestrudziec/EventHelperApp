@@ -1,0 +1,47 @@
+.eventWrapper{
+  width: 90vw;
+  background: white;
+  border-radius: 5px;
+  min-height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2px 0px;
+}
+
+
+.dateAndTimeWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0px 10px;
+  min-width: 100px;
+}
+
+.date{
+  font-size: 0.8em;
+}
+
+.time{
+  font-size: 0.9em;
+  font-weight: 900;
+}
+
+.eventWrapper{
+  min-width: 300px;
+
+}
+
+.event{
+  font-size: 0.9em;
+  font-weight: 900;
+
+}
+
+.place{
+  font-size: 0.65em;
+  padding-left: 5px;
+  margin-top: 4px;
+  border-left: 1px solid black;
+}

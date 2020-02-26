@@ -6,6 +6,8 @@ import logoWSPol from '../../assets/logo/logo-wspol.png';
 
 import Clock from "../Clock/Clock";
 import {Link} from "react-router-dom";
+import logoKum2 from '../../assets/logo/logo-kum-2.tif';
+
 
 const Header = () => {
 
