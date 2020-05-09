@@ -10,14 +10,14 @@ const Nav = () => {
 
 
             <div className={styles.list}>
-              <NavLink exact activeClassName={styles.navItemLinkActive}
-                             className={styles.navItemLink} to = "/kontakt">
+                <NavLink exact activeClassName={styles.navItemLinkActive}
+                         className={styles.navItemLink} to = "/kontakt">
                     Kontakt
                     <div className="fas fa-phone-square-alt"></div>
                 </NavLink>
 
-              <NavLink exact activeClassName={styles.navItemLinkActive}
-                             className={styles.navItemLink} to = "/planzjazdu">
+                <NavLink exact activeClassName={styles.navItemLinkActive}
+                         className={styles.navItemLink} to = "/planzjazdu">
                     Plan zjazdu
                     <div className="fas fa-calendar-check"></div>
                 </NavLink>
